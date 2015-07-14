@@ -1,10 +1,10 @@
 require 'formula'
 
 class Frotz < Formula
-  url 'https://downloads.sourceforge.net/project/frotz/frotz/2.43/frotz-2.43d.tar.gz'
-  homepage 'http://frotz.sourceforge.net/'
-  sha1 'e0986ca35a7f8c7dade1dc534701e883eee8b5ae'
-  head 'git://frotz.git.sourceforge.net/gitroot/frotz/frotz'
+  url 'https://github.com/DavidGriffith/frotz/archive/2.44.tar.gz'
+  homepage 'https://github.com/DavidGriffith/frotz'
+  sha1 '0dcccb54ef64c91d217f21cdef10ebb00ec00522'
+  head 'git@github.com:DavidGriffith/frotz.git'
 
   def install
     inreplace "Makefile" do |s|
@@ -18,3 +18,4 @@ class Frotz < Formula
     system "make install"
   end
 end
+
